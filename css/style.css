@@ -1,0 +1,42 @@
+body{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: #eb9683;
+}
+.container{
+	width: 500px;
+	border: 20px solid white;
+	display: flex;
+	height: 337px;
+	overflow: scroll;
+	margin: 0 auto;
+	position: relative;
+	scroll-behavior: smooth;
+	border-radius: 20px;
+	background: white;
+}
+.container::-webkit-scrollbar { 
+	width: 0; 
+}
+.container div{
+	flex-shrink: 0;
+	flex-basis: 200px;
+	height: 300px;
+	background: #eb9683;
+	border-radius: 20px;
+	margin: 10px;
+}
+.arrows{
+	margin-top: 30px;
+}
+.arrow{
+	display: inline-block;
+	margin: 10px;
+	width: 50px;
+	height: 50px;
+}
+.arrow_left{
+	transform: rotate(180deg);
+}
